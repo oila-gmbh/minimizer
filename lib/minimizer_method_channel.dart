@@ -10,8 +10,7 @@ class MethodChannelMinimizer extends MinimizerPlatform {
   final methodChannel = const MethodChannel('minimizer');
 
   @override
-  Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
-    return version;
+  void toPreviousApp() async {
+    await methodChannel.invokeMethod<String>('toPreviousApp');
   }
 }

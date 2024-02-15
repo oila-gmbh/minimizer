@@ -23,7 +23,7 @@ abstract class MinimizerPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
+  toPreviousApp() {
+    throw UnimplementedError('toPreviousApp() has not been implemented.');
   }
 }

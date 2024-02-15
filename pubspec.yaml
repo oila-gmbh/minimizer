@@ -1,7 +1,7 @@
 name: minimizer
-description: "A new Flutter plugin project."
+description: "A minimizer plugin."
 version: 0.0.1
-homepage:
+homepage: https://github.com/oila-gmbh/minimizer
 
 environment:
   sdk: '>=3.2.6 <4.0.0'

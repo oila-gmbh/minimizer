@@ -1,15 +1,18 @@
 # minimizer
+Supported platforms:
 
-A new Flutter plugin project.
+| iOS | Android |
+|-----|---------|
 
-## Getting Started
+Plugin for android and iOS that minimizes an app or returns to previous app.
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+## Getting started
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+TODO: List prerequisites and provide or point to information on how to
+start using the package.
 
+## Usage
+
+```dart
+Miminizer.toPreviousApp()
+```
