@@ -25,11 +25,14 @@ class MinimizerPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   }
 
   override fun onMethodCall(call: MethodCall, result: Result) {
-    if (call.method == "toPreviousApp") {
-      activity?.moveTaskToBack(true);
+    when(call.method) {
+      "toPreviousApp" -> {
+        activity?.moveTaskToBack(true)
 //      result.success("Android ${android.os.Build.VERSION.RELEASE}")
-    } else {
-      result.notImplemented()
+      }
+      else -> {
+        result.notImplemented()
+      }
     }
   }
 
@@ -46,7 +49,7 @@ class MinimizerPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   }
 
   override fun onReattachedToActivityForConfigChanges(binding: ActivityPluginBinding) {
-
+    this.activity = binding.activity
   }
 
   override fun onDetachedFromActivity() {
